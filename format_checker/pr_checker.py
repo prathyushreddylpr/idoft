@@ -140,7 +140,7 @@ def check_notes(filename, row, i, log):
     """Checks validity of Notes."""
 
     if not data["Notes"].fullmatch(row["Notes"]):
-        log_std_error(filename, log, i, row, "Notes")
+        log_std_error(filename, log, i, row, "Notes", "Notes can only contain links.")
 
 
 def check_forked_project(filename, row, i, log):
